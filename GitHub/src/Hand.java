@@ -29,8 +29,6 @@ public class Hand extends Deck {
 	String HandValue2() {
 		
 		String kort2 = kort[random.nextInt(kort.length)];
-		
-		
 //		int value = Integer.parseInt(kort2);
 //		
 //		switch (kort2) {
