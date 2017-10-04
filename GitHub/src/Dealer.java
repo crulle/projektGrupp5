@@ -16,7 +16,7 @@ public class Dealer extends Hand {
 		System.out.println("\nDealers card: " + dealerkort + " och " + kort2);
 		System.out.println("Dealer have: " + dealerSum);
 
-		if (dealerSum <= 17) {
+		if (dealerSum <= 16) {
 			System.out.println("Dealer draw card, needs to draw until 17 or more");
 
 			do {

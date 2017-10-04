@@ -6,6 +6,7 @@ public class Mani {
 		// TODO Auto-generated method stub
 		Scanner textInput = new Scanner(System.in);
 
+	
 		System.out.println("Hello and Welcome to Casino group 5!");
 		System.out.println("What's your name sir/miss?");
 		String playerName = textInput.nextLine();
