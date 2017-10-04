@@ -25,12 +25,11 @@ public class Hand {
 		 kort1=kort[9];
 		 }
 
-//		 System.out.println(kort101);
 		return kort1;
 	}
 	String HandValue2() {
 		String kort2 = kort[random.nextInt(kort.length)];
-//		String kort202 = colour[random.nextInt(colour.length)] +  " " +kort2;
+
 		 if (kort2.equals("Knekt") || kort2.equals("Dam") || kort2.equals("Kung"))
 		 {
 		 kort2=kort[9];
@@ -40,7 +39,6 @@ public class Hand {
 		 kort2=kort[9];
 		 }
 
-//			System.out.println(kort202);
 		return kort2;
 	}
 }	
