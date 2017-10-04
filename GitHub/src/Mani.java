@@ -32,6 +32,11 @@ public class Mani {
 		}
 		else 
 			System.out.println("\nYou got to much, Dealer Win");
+		
+		
+		/*Försöker bara förstå hur den fungerar /Daniel
+		Deck test = new Deck();
+		test.createFullDeck();*/
 
 
 		textInput.close();

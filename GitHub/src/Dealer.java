@@ -10,6 +10,7 @@ public class Dealer extends Hand {
 
 	protected int dealaersChoice() {
 		
+		
 
 		int dealerSum = dealerkort + kort2;
 
