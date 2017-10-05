@@ -1,27 +1,25 @@
-	import java.util.ArrayList;
-	import java.util.Random;
-	
-	public class Deck {
-	    	
+//import java.util.ArrayList;
+import java.util.Random;
 
-//	 	Har försökt att smala av den men behöver mera för att göra
-//		random kort, jag förstod inte riktigt hur den moetoden fungarade, Daniel
+public class Deck {
 
-	 	private ArrayList<Deck> cards;
-		String suit[] =  {"DIAMOND", "HEART", "SPADE", "CLUB"};
-		 String values[] = {"TWOO", "THREE", "FOUR", "FIVE", "SIX",
-		    		"SEVEN", "EIGHT", "NINE", "TEN", "JACK", "QUEEN", "KING", "ACE"};
+//	private ArrayList<Deck> cards;
+	String suit[] = { "DIAMOND", "HEART", "SPADE", "CLUB" };
+	String values[] = { "TWOO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE", "TEN", "JACK", "QUEEN",
+			"KING", "ACE" };
 
-	    public void createFullDeck() {
+	Random random = new Random();
 
-	        for(String cardSuit : suit) {
-	            for (String cardValue : values) {
-	                //Add new card to the mix
-	                System.out.println(cardSuit + " "+cardValue);
-	                
-	                
+	public String createSuit() {
 
-	            }
-	        }
-	    }
+		String suits = suit[random.nextInt(suit.length)];
+		return suits;
 	}
+
+	public String createValue() {
+		String value = values[random.nextInt(values.length)];
+
+		return value;
+
+	}
+}
