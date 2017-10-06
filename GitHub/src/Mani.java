@@ -31,12 +31,15 @@ public class Mani {
 			int dealerSum = dealer.dealaersChoice();
 			if (dealerSum >= playerSum && dealerSum <= 21 || playerSum > 21) {
 				System.out.println("Dealer Win");
+				System.out.println("New Balance: "+(money-bet));
 				break;
 			} else
 				System.out.println("You win!");
+			System.out.println("New Balance: "+(bet+money));
 			break;
 		} else
 			System.out.println("\nYou got to much, Dealer Win");
+		System.out.println("New Balance: "+(money-bet));
 		break;
 		}
 		}while (bet<=money);
