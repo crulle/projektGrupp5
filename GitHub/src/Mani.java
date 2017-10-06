@@ -17,8 +17,12 @@ public class Mani {
 		Dealer dealer = new Dealer();
 		System.out.println("How much would you like to bet?");
 		int bet = textInput.nextInt();
-		if (bet>money)
-			System.out.println(playerName+" don't have that much moeny...");
+		
+		do {
+		if (bet>money) {
+			System.out.println(playerName+" don't have that much moeny...try again");
+			bet = textInput.nextInt();
+		} else {
 		spelare.getHand();
 		System.out.println(dealer.toString());
 		int playerSum = spelare.hit();
@@ -27,11 +31,15 @@ public class Mani {
 			int dealerSum = dealer.dealaersChoice();
 			if (dealerSum >= playerSum && dealerSum <= 21 || playerSum > 21) {
 				System.out.println("Dealer Win");
+				break;
 			} else
 				System.out.println("You win!");
+			break;
 		} else
 			System.out.println("\nYou got to much, Dealer Win");
-
+		break;
+		}
+		}while (bet<=money);
 		textInput.close();
 
 	}
