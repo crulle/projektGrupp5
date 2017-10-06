@@ -1,15 +1,17 @@
 
 public class Dealer extends Hand {
 
-	String kort = newCard();
-	String färg = newSuit();
-	int värde = changeCard(kort);
+	private String kort = newCard();
+	private String färg = newSuit();
 
-	String kort1 = newCard();
-	String färg1 = newSuit();
-	int värde1 = changeCard(kort1);
 
 	protected int dealaersChoice() {
+		
+
+		int värde = changeCard(kort);
+		String kort1 = newCard();
+		String färg1 = newSuit();
+		int värde1 = changeCard(kort1);
 
 		System.out.println("\nDealers card: " + kort + " of " + färg + " and " + kort1 + " of " + färg1);
 
