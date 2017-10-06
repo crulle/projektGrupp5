@@ -11,13 +11,13 @@ public class Deck {
 
 	Random random = new Random();
 
-	public String createSuit() {
+	protected String createSuit() {
 
 		String suits = suit[random.nextInt(suit.length)];
 		return suits;
 	}
 
-	public String createValue() {
+	protected String createValue() {
 		String value = values[random.nextInt(values.length)];
 
 		return value;
