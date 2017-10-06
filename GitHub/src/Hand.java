@@ -1,18 +1,18 @@
 
 public class Hand extends Deck {
 
-	public String newCard() {
+	protected String newCard() {
 		String aNewCard = createValue();
 		return aNewCard;
 
 	}
 
-	public String newSuit() {
+	protected String newSuit() {
 		String newSuit = createSuit();
 		return newSuit;
 	}
 
-	public static int changeCard(String aNewCard) {
+	protected int changeCard(String aNewCard) {
 		String card = aNewCard;
 		int value = 0;
 		switch (card) {

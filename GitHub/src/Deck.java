@@ -12,14 +12,12 @@ public class Deck {
 	Random random = new Random();
 
 	protected String createSuit() {
-
 		String suits = suit[random.nextInt(suit.length)];
 		return suits;
 	}
 
 	protected String createValue() {
 		String value = values[random.nextInt(values.length)];
-
 		return value;
 	}
 
