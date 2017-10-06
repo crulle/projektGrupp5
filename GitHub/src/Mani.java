@@ -10,16 +10,15 @@ public class Mani {
 		System.out.println("What's your name sir/miss?");
 		String playerName = textInput.nextLine();
 
-		System.out.println("Hello " + playerName + " your card is: ");
+		System.out.println("Hello " + playerName + " how much money do you have? ");
+		int money = textInput.nextInt();
 
 		Guest spelare = new Guest(playerName, 100);
 		Dealer dealer = new Dealer();
-		
+		System.out.println("Hello " + playerName +" "+money+"€ your card is: ");
 		spelare.getHand();
 		System.out.println(dealer.toString());
 		int playerSum = spelare.hit();
-		
-		
 
 		if (playerSum <= 21) {
 			int dealerSum = dealer.dealaersChoice();
@@ -29,8 +28,6 @@ public class Mani {
 				System.out.println("You win!");
 		} else
 			System.out.println("\nYou got to much, Dealer Win");
-		
-		
 
 		textInput.close();
 
