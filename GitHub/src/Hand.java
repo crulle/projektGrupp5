@@ -1,26 +1,18 @@
 
-import java.util.Random;
-
 public class Hand extends Deck {
 
-
-	Random random = new Random();
-
-
-	public String newCard()
-	{
+	public String newCard() {
 		String aNewCard = createValue();
-		return  aNewCard;
+		return aNewCard;
 
 	}
 
-	public String newSuit()
-	{
+	public String newSuit() {
 		String newSuit = createSuit();
 		return newSuit;
 	}
-	public int changeCard(String aNewCard)
-	{
+
+	public static int changeCard(String aNewCard) {
 		String card = aNewCard;
 		int value = 0;
 		switch (card) {
@@ -66,7 +58,5 @@ public class Hand extends Deck {
 		}
 		return value;
 	}
-	
-
 
 }

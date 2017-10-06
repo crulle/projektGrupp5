@@ -1,9 +1,10 @@
+
 //import java.util.ArrayList;
 import java.util.Random;
 
 public class Deck {
 
-//	private ArrayList<Deck> cards;
+	// private ArrayList<Deck> cards;
 	String suit[] = { "DIAMOND", "HEART", "SPADE", "CLUB" };
 	String values[] = { "TWOO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE", "TEN", "JACK", "QUEEN",
 			"KING", "ACE" };
@@ -20,6 +21,6 @@ public class Deck {
 		String value = values[random.nextInt(values.length)];
 
 		return value;
-
 	}
+
 }

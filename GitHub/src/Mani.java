@@ -18,9 +18,9 @@ public class Mani {
 		int bet = 0;
 		boolean yourMoney = false;
 		boolean betMoney = false;
-		
+
 		System.out.println("Hello " + playerName + " how much money do you have? ");
-		
+
 		while (!yourMoney) {
 			try {
 				money = textInput.nextInt();
