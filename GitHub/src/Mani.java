@@ -13,9 +13,12 @@ public class Mani {
 		System.out.println("Hello " + playerName + " how much money do you have? ");
 		int money = textInput.nextInt();
 
-		Guest spelare = new Guest(playerName, 100);
+		Guest spelare = new Guest(playerName, money);
 		Dealer dealer = new Dealer();
-		System.out.println("Hello " + playerName +" "+money+"€ your card is: ");
+		System.out.println("How much would you like to bet?");
+		int bet = textInput.nextInt();
+		if (bet>money)
+			System.out.println(playerName+" don't have that much moeny...");
 		spelare.getHand();
 		System.out.println(dealer.toString());
 		int playerSum = spelare.hit();
